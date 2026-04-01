@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Shield, CheckCircle } from "lucide-react";
+import { Menu } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
@@ -23,10 +24,13 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img
+              <Image
                 src="/logo.png"
                 alt="KISAN CARTS Logo"
-                className="h-48 w-auto object-contain"
+                width={200}
+                height={64}
+                className="h-16 w-auto object-contain"
+                priority
               />
             </Link>
           </div>

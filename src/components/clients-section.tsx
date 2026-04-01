@@ -6,57 +6,6 @@ import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/com
 import { Star, Quote } from "lucide-react";
 
 const ClientsSection = () => {
-  const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
-  const [isInitialized, setIsInitialized] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Detect mobile on client side
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
-  useEffect(() => {
-    if (!api) return;
-
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
-
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
-
-  // Continuous scroll functionality - optimized for mobile
-  useEffect(() => {
-    if (!api) return;
-    
-    // Start from a random position only once
-    if (!isInitialized) {
-      const randomStart = Math.floor(Math.random() * reviews.length);
-      api.scrollTo(randomStart);
-      setIsInitialized(true);
-    }
-    
-    // Use longer interval for mobile to reduce performance impact
-    const intervalTime = isMobile ? 5000 : 4000;
-    
-    const interval = setInterval(() => {
-      // Simply use scrollNext - the carousel's loop: true handles the infinite loop
-      api.scrollNext();
-    }, intervalTime);
-    
-    return () => clearInterval(interval);
-  }, [api, isMobile]);
-
   const reviews = [
     {
       name: "Rajesh Kumar",
@@ -94,6 +43,44 @@ const ClientsSection = () => {
       role: "Procurement Specialist"
     }
   ];
+
+  const [api, setApi] = useState<CarouselApi>();
+  const [isInitialized, setIsInitialized] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile on client side
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Continuous scroll functionality - optimized for mobile
+  useEffect(() => {
+    if (!api) return;
+    
+    // Start from a random position only once
+    if (!isInitialized) {
+      const randomStart = Math.floor(Math.random() * reviews.length);
+      api.scrollTo(randomStart);
+      setIsInitialized(true);
+    }
+    
+    // Use longer interval for mobile to reduce performance impact
+    const intervalTime = isMobile ? 5000 : 4000;
+    
+    const interval = setInterval(() => {
+      // Simply use scrollNext - the carousel's loop: true handles the infinite loop
+      api.scrollNext();
+    }, intervalTime);
+    
+    return () => clearInterval(interval);
+  }, [api, isMobile, isInitialized, reviews.length]);
 
   return (
     <section className="py-16 lg:py-24 bg-gray-50 overflow-hidden">

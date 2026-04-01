@@ -9,7 +9,7 @@ import Footer from "@/components/footer";
 import MobileNav from "@/components/mobile-nav";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Package, Filter, Search } from "lucide-react";
+import { Filter } from "lucide-react";
 
 export default function ProductsPage() {
   const [showCategoryModal, setShowCategoryModal] = useState(false);

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Thermometer, Wrench, Info, Plus } from "lucide-react";
+import Image from "next/image";
 import QuoteModal from "./quote-modal";
 import NewProductModal from "./new-product-modal";
 import EnquiryModal from "./enquiry-modal";
@@ -107,7 +108,7 @@ const ProductsSection = ({ selectedCategory, searchQuery }: ProductsSectionProps
           }
         );
         setProducts(list);
-      } catch (e) {
+      } catch (_e) {
         // If fetch fails, keep products empty
         setProducts([]);
       } finally {
@@ -192,17 +193,18 @@ const ProductsSection = ({ selectedCategory, searchQuery }: ProductsSectionProps
               </div>
             ))
           ) : sortedProducts.length > 0 ? (
-            sortedProducts.map((product, index) => (
+            sortedProducts.map((product) => (
               <div
                 key={product.id}
                 className="group"
               >
                 <Card className="h-full shadow-md rounded-2xl border-0 bg-white overflow-hidden">
-                  <div className="relative overflow-hidden bg-white p-4">
-                    <img
+                  <div className="relative overflow-hidden bg-white p-4 h-64">
+                    <Image
                       src={product.image}
                       alt={product.title}
-                      className="w-full h-64 object-contain transition-transform duration-500 group-hover:scale-110"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0" />
                   </div>

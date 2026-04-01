@@ -214,6 +214,7 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
 /*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -654,9 +655,6 @@
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
   }
-  .-ml-2 {
-    margin-left: calc(var(--spacing) * -2);
-  }
   .-ml-4 {
     margin-left: calc(var(--spacing) * -4);
   }
@@ -749,9 +747,6 @@
   }
   .h-24 {
     height: calc(var(--spacing) * 24);
-  }
-  .h-48 {
-    height: calc(var(--spacing) * 48);
   }
   .h-64 {
     height: calc(var(--spacing) * 64);
@@ -872,9 +867,6 @@
   }
   .grow-0 {
     flex-grow: 0;
-  }
-  .basis-1\/2 {
-    flex-basis: calc(1/2 * 100%);
   }
   .basis-full {
     flex-basis: 100%;
@@ -1280,13 +1272,6 @@
     }
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-  .from-black\/20 {
-    --tw-gradient-from: color-mix(in srgb, #000 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-gradient-from: color-mix(in oklab, var(--color-black) 20%, transparent);
-    }
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
   .from-red-400 {
     --tw-gradient-from: var(--color-red-400);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1338,9 +1323,6 @@
   }
   .object-contain {
     object-fit: contain;
-  }
-  .object-cover {
-    object-fit: cover;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -1425,9 +1407,6 @@
   }
   .pb-16 {
     padding-bottom: calc(var(--spacing) * 16);
-  }
-  .pl-2 {
-    padding-left: calc(var(--spacing) * 2);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
@@ -2350,11 +2329,6 @@
       --tw-enter-opacity: 0;
     }
   }
-  .sm\:mt-0 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 0);
-    }
-  }
   .sm\:w-\[400px\] {
     @media (width >= 40rem) {
       width: 400px;
@@ -2434,20 +2408,9 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
-  .sm\:text-xs {
-    @media (width >= 40rem) {
-      font-size: var(--text-xs);
-      line-height: var(--tw-leading, var(--text-xs--line-height));
-    }
-  }
   .md\:absolute {
     @media (width >= 48rem) {
       position: absolute;
-    }
-  }
-  .md\:-ml-4 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * -4);
     }
   }
   .md\:-ml-6 {
@@ -2465,11 +2428,6 @@
       display: none;
     }
   }
-  .md\:h-12 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 12);
-    }
-  }
   .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
     @media (width >= 48rem) {
       width: var(--radix-navigation-menu-viewport-width);
@@ -2485,11 +2443,6 @@
       flex-basis: calc(1/2 * 100%);
     }
   }
-  .md\:basis-1\/3 {
-    @media (width >= 48rem) {
-      flex-basis: calc(1/3 * 100%);
-    }
-  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2500,11 +2453,6 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
-  .md\:p-6 {
-    @media (width >= 48rem) {
-      padding: calc(var(--spacing) * 6);
-    }
-  }
   .md\:py-16 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 16);
@@ -2513,11 +2461,6 @@
   .md\:pb-0 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:pl-4 {
-    @media (width >= 48rem) {
-      padding-left: calc(var(--spacing) * 4);
     }
   }
   .md\:pl-6 {
@@ -2536,11 +2479,6 @@
       flex-basis: calc(1/3 * 100%);
     }
   }
-  .lg\:basis-1\/4 {
-    @media (width >= 64rem) {
-      flex-basis: calc(1/4 * 100%);
-    }
-  }
   .lg\:grid-cols-2 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2549,11 +2487,6 @@
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-cols-4 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   .lg\:p-12 {
@@ -2577,12 +2510,6 @@
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
-  .lg\:text-4xl {
-    @media (width >= 64rem) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
-    }
-  }
   .lg\:text-5xl {
     @media (width >= 64rem) {
       font-size: var(--text-5xl);
@@ -2599,12 +2526,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-8xl);
       line-height: var(--tw-leading, var(--text-8xl--line-height));
-    }
-  }
-  .lg\:text-lg {
-    @media (width >= 64rem) {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
   .dark\:border-input {
@@ -2788,7 +2709,6 @@
   inherits: false;
   initial-value: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
   --radius: 1rem;
   --background: #FFFFFF;

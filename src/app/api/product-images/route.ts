@@ -53,7 +53,7 @@ export async function GET() {
     }));
 
     return NextResponse.json({ images });
-  } catch (error) {
+  } catch (_error) {
     return NextResponse.json(
       { images: [], error: "Failed to read product images" },
       { status: 500 }

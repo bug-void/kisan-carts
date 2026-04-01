@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Users, Globe, Award, Factory, TrendingUp, HelpCircle, ChevronDown } from "lucide-react";
+import { HelpCircle, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 const AboutSection = () => {
