@@ -1,0 +1,167 @@
+{
+  "Bananas.png": {
+    "title": "Fresh Bananas",
+    "subtitle": "Premium Quality • Fresh",
+    "details": {
+      "Type": "Cavendish",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "7-10 Days",
+      "Packaging": "13.5kg / 18kg Carton"
+    }
+  },
+  "Cucumber.png": {
+    "title": "Fresh Cucumber",
+    "subtitle": "Crispy • Farm Fresh",
+    "details": {
+      "Type": "Green Cucumber",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "5-7 Days",
+      "Packaging": "Crates / Bags"
+    }
+  },
+  "Drum sticks.png": {
+    "title": "Fresh Drumsticks",
+    "subtitle": "Nutritious • Healthy",
+    "details": {
+      "Type": "Moringa Oleifera",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "10-12 Days",
+      "Packaging": "5kg / 10kg Bags"
+    }
+  },
+  "Fresh cantaloupe and juicy wedge.png": {
+    "title": "Fresh Cantaloupe",
+    "subtitle": "Sweet • Juicy",
+    "details": {
+      "Type": "Muskmelon",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "5-8 Days",
+      "Packaging": "Carton Boxes"
+    }
+  },
+  "Fresh eggplants.png": {
+    "title": "Fresh Eggplants",
+    "subtitle": "Organic • High Quality",
+    "details": {
+      "Type": "Brinjal / Aubergine",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "5-7 Days",
+      "Packaging": "Crates / Bags"
+    }
+  },
+  "Fresh ivy gourds with green leaves.png": {
+    "title": "Fresh Ivy Gourd",
+    "subtitle": "Crunchy • Nutritious",
+    "details": {
+      "Type": "Coccinia Grandis",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "5-7 Days",
+      "Packaging": "Bags / Crates"
+    }
+  },
+  "Fresh jamun with bright green leaves.png": {
+    "title": "Fresh Jamun",
+    "subtitle": "Healthy • Black Plum",
+    "details": {
+      "Type": "Syzygium Cumini",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "3-5 Days",
+      "Packaging": "Small Trays / Boxes"
+    }
+  },
+  "Fresh okra pods on white background.png": {
+    "title": "Fresh Okra",
+    "subtitle": "Lady Finger • Farm Fresh",
+    "details": {
+      "Type": "Lady Finger",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "4-6 Days",
+      "Packaging": "5kg / 10kg Bags"
+    }
+  },
+  "Fresh snake gourds stacked neatly.png": {
+    "title": "Fresh Snake Gourd",
+    "subtitle": "Organic • Healthy",
+    "details": {
+      "Type": "Trichosanthes Cucumerina",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "5-7 Days",
+      "Packaging": "Bags / Crates"
+    }
+  },
+  "Fresh watermelon and vibrant slice.png": {
+    "title": "Fresh Watermelon",
+    "subtitle": "Refreshing • Juicy",
+    "details": {
+      "Type": "Citrullus Lanatus",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "10-15 Days",
+      "Packaging": "Bulk / Individual Protection"
+    }
+  },
+  "Gawar.png": {
+    "title": "Fresh Cluster Beans (Gawar)",
+    "subtitle": "Organic • Nutritious",
+    "details": {
+      "Type": "Cluster Beans",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "5-7 Days",
+      "Packaging": "Bags / Crates"
+    }
+  },
+  "Ripe papaya with vibrant orange flesh.png": {
+    "title": "Ripe Papaya",
+    "subtitle": "Sweet • Healthy",
+    "details": {
+      "Type": "Carica Papaya",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "5-7 Days",
+      "Packaging": "Carton Boxes"
+    }
+  },
+  "Ripe pineapple and fresh wedge.png": {
+    "title": "Ripe Pineapple",
+    "subtitle": "Tropical • Sweet",
+    "details": {
+      "Type": "Ananas Comosus",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "7-10 Days",
+      "Packaging": "Carton Boxes"
+    }
+  },
+  "Vibrant lychee cluster with peeled fruit.png": {
+    "title": "Fresh Lychee",
+    "subtitle": "Aromatic • Sweet",
+    "details": {
+      "Type": "Litchi Chinensis",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "3-5 Days",
+      "Packaging": "Trays / Small Boxes"
+    }
+  },
+  "Vibrant mango with fresh slice.png": {
+    "title": "Fresh Mango",
+    "subtitle": "Alphonso / Kesar • Premium",
+    "details": {
+      "Type": "King of Fruits",
+      "Grade": "A Grade",
+      "Origin": "India",
+      "Shelf Life": "7-10 Days",
+      "Packaging": "Carton Boxes"
+    }
+  }
+}

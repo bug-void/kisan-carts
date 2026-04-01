@@ -1,0 +1,45 @@
+{
+  "name": "kisan-carts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@number-flow/react": "^0.5.10",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-icons": "^1.3.2",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-navigation-menu": "^1.2.14",
+    "@radix-ui/react-scroll-area": "^1.2.10",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
+    "framer-motion": "^12.23.22",
+    "lucide-react": "^0.545.0",
+    "next": "15.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-hook-form": "^7.64.0",
+    "react-intersection-observer": "^9.16.0",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.4",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5"
+  }
+}
