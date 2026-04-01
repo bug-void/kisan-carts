@@ -1,0 +1,13 @@
+{"timestamp":"00:00:01.377","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:01.377","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
+{"timestamp":"00:00:01.377","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
+{"timestamp":"00:00:01.377","source":"Server","level":"LOG","message":"  \t- include was updated to add '.next/dev/types/**/*.ts'"}
+{"timestamp":"00:00:01.377","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:01.377","source":"Server","level":"LOG","message":"  The following mandatory changes were made to your tsconfig.json:\n"}
+{"timestamp":"00:00:01.377","source":"Server","level":"LOG","message":"  \t- jsx was set to react-jsx (next.js uses the React automatic runtime)"}
+{"timestamp":"00:00:01.377","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:01.457","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:07.239","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:11.768","source":"Browser","level":"WARN","message":"Image with src \"/logo.png\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \"auto\"' or 'height: \"auto\"' to maintain the aspect ratio."}
+{"timestamp":"00:00:11.778","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/logo.png\\\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \\\"auto\\\"' or 'height: \\\"auto\\\"' to maintain the aspect ratio.\\u001b[39m\" \"\\u001b[2m(file:///Users/naeem/Desktop/JK NEW/kisan-carts/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)\\u001b[22m\""}
+{"timestamp":"00:00:11.778","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/logo.png\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \"auto\"' or 'height: \"auto\"' to maintain the aspect ratio.\u001b[39m"}
