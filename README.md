@@ -1,122 +1,112 @@
 # KISAN CARTS - Fresh Fruits & Vegetables Exporter
 
-A modern, mobile-first responsive homepage for KISAN CARTS, a leading exporter of farm-fresh fruits and vegetables located in Mumbai, India.
+A modern, mobile-first responsive web platform for KISAN CARTS, a leading exporter of farm-fresh fruits and vegetables based in Mumbai, India. Built with Next.js 15, TypeScript, Tailwind CSS, and ShadCN UI.
 
-## 🚀 Features
+## ✨ Features
 
-- **Mobile-First Design**: Responsive layout optimized for all devices
-- **Modern UI**: Built with ShadCN UI components and Tailwind CSS
-- **Smooth Animations**: Framer Motion for engaging user interactions
-- **SEO Optimized**: Complete meta tags and structured data
-- **Performance**: Optimized images and fast loading times
-- **Accessibility**: WCAG compliant design patterns
+* **Mobile-First Design:** Fully responsive layout optimized for all devices and network conditions.
+* **Modern UI:** Clean, glassmorphic aesthetic built with ShadCN UI components and Tailwind CSS.
+* **Smooth Animations:** Framer Motion integrated for engaging, lightweight user interactions.
+* **SEO Optimized:** Complete meta tags, structured JSON-LD data, and semantic HTML for high B2B visibility.
+* **Performance:** Optimized image loading and caching strategies using Next.js App Router.
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Components**: ShadCN UI
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Fonts**: Inter & Poppins
+* **Framework:** Next.js 15 (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS v4
+* **Components:** ShadCN UI & Radix Primitives
+* **Animations:** Framer Motion
+* **Icons:** Lucide React
 
-## 📱 Sections
+## 🚀 Local Development Setup
 
-1. **Navbar**: Sticky navigation with mobile drawer
-2. **Hero Section**: Full-width background with call-to-action
-3. **About Us**: Company information and statistics
-4. **Products**: Grid layout showcasing fresh produce
-5. **Clients**: Horizontally scrollable client logos
-6. **Contact**: Contact form and business information
-7. **Mobile Navigation**: Bottom navigation for mobile devices
-8. **Footer**: Social links and company information
-9. **Floating WhatsApp**: Quick contact button
+Follow these steps to get the project running on your local machine:
 
-## 🎨 Design System
-
-- **Primary Colors**: Red gradient (#C52B1F → #E34B3B)
-- **Background**: White (#FFFFFF)
-- **Text**: Neutral gray (#1A1A1A / #444)
-- **Typography**: Inter & Poppins fonts
-- **Border Radius**: Rounded-2xl for modern look
-- **Shadows**: Soft shadows for depth
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
+**1. Clone the repository**
+bash
+git clone [https://github.com/bug-void/kisan-carts.git](https://github.com/bug-void/kisan-carts.git)
 cd kisan-carts
-```
+2. Install dependencies
 
-2. Install dependencies:
-```bash
+Bash
 npm install
-```
+3. Set up Environment Variables
+Create a .env.local file in the root directory and add the required keys (see the Environment Variables section below).
 
-3. Start the development server:
-```bash
+4. Start the development server
+
+Bash
 npm run dev
-```
+Open http://localhost:3000 in your browser to view the application.
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+🔐 Environment Variables
+Create a .env.local file in the root of your project. Use the following template:
 
-## 📦 Build for Production
+Code snippet
+# Site configuration
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
-```bash
-npm run build
-npm start
-```
+# API & Integrations (Add your keys here for local testing)
+# NEXT_PUBLIC_RAZORPAY_KEY_ID=your_razorpay_key
+# AIRTABLE_API_KEY=your_airtable_api_key
+# AIRTABLE_BASE_ID=your_base_id
+🏗️ Folder Structure
+An overview of the core project architecture:
 
-## 🏗️ Project Structure
+Plaintext
+kisan-carts/
+├── public/                 # Static assets (images, icons, fonts)
+├── src/
+│   ├── app/                # Next.js App Router (pages, layouts, api routes)
+│   │   ├── api/            # Serverless API endpoints
+│   │   ├── globals.css     # Global Tailwind styles
+│   │   ├── layout.tsx      # Root layout & SEO metadata
+│   │   └── page.tsx        # Main landing page
+│   ├── components/         # Reusable React components
+│   │   ├── ui/             # ShadCN UI base components
+│   │   ├── navbar.tsx      # Navigation header (Glassmorphic)
+│   │   ├── hero-section.tsx
+│   │   └── footer.tsx
+│   └── lib/                # Utility functions, helpers, and configurations
+│       └── utils.ts        # Tailwind merge utilities (cn)
+├── components.json         # ShadCN configuration
+├── next.config.ts          # Next.js configuration
+├── tailwind.config.ts      # Tailwind CSS configuration
+└── tsconfig.json           # TypeScript configuration
+🤝 Contribution Guidelines
+We welcome contributions! Please follow this workflow to ensure smooth collaboration:
 
-```
-src/
-├── app/
-│   ├── globals.css          # Global styles and CSS variables
-│   ├── layout.tsx           # Root layout with metadata
-│   └── page.tsx             # Homepage component
-├── components/
-│   ├── ui/                  # ShadCN UI components
-│   ├── navbar.tsx           # Navigation component
-│   ├── hero-section.tsx     # Hero section
-│   ├── about-section.tsx    # About us section
-│   ├── products-section.tsx # Products grid
-│   ├── clients-section.tsx  # Clients showcase
-│   ├── contact-section.tsx  # Contact form
-│   ├── mobile-nav.tsx       # Mobile navigation
-│   ├── footer.tsx           # Footer component
-│   └── floating-whatsapp.tsx # WhatsApp button
-└── lib/
-    └── utils.ts             # Utility functions
-```
+1. Branch Naming Convention
+Create a new branch for every feature or bug fix. Use the following prefixes:
 
-### Content
-Edit the component files in `src/components/` to update:
-- Company information
-- Product details
-- Contact information
-- Images and media
+feat/ - For new features (e.g., feat/add-razorpay-checkout)
 
-### Styling
-Modify Tailwind classes or add custom CSS in `src/app/globals.css`.
+fix/ - For bug fixes (e.g., fix/mobile-nav-hydration)
 
-## 📄 License
+docs/ - For documentation updates (e.g., docs/update-readme)
 
-This project is proprietary to KISAN CARTS. All rights reserved.
+ui/ - For design/styling updates (e.g., ui/navbar-refactor)
 
-## 🤝 Support
+2. Commit Message Standard
+Write clear and concise commit messages. We recommend the Conventional Commits format:
 
-For technical support or questions about this website, please contact the development team.
+feat: add WhatsApp floating button
 
----
+ui: center navbar links and add CTA button
 
-Built with ❤️ for KISAN CARTS
+docs: update setup instructions
+
+3. Pull Request Process
+Fork the repository and create your branch from main.
+
+Ensure your code passes standard linting (npm run lint) and builds successfully (npm run build).
+
+Open a Pull Request against the main branch.
+
+Link the PR to the relevant GitHub Issue (e.g., Closes #30 in the PR description).
+
+Request a review from the maintainers.
+
+📄 License
+This project is proprietary to KISAN CARTS. All rights reserved. For business or technical inquiries, please contact the development team.
